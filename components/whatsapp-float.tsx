@@ -2,7 +2,7 @@ export default function WhatsAppFloat() {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/919380597443"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all hover:scale-110 transform flex items-center justify-center"
