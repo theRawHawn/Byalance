@@ -190,8 +190,8 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                      <p className="text-gray-600">+91 98765 43210</p>
-                      <p className="text-gray-600">+91 87654 32109</p>
+                      <p className="text-gray-600">+91 93805 97443</p>
+                      <p className="text-gray-600">+91 96111 93492</p>
                     </div>
                   </div>
 
@@ -213,9 +213,9 @@ export default function ContactSection() {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Office Address</h4>
                       <p className="text-gray-600">
-                        123 Business Center,<br />
-                        Main Market, Sector 15,<br />
-                        Your City - 123456
+                        #38, Dollars Colony,<br />
+                        4th Phase, JP Nagar,<br />
+                        Bengaluru, Karnataka-580073
                       </p>
                     </div>
                   </div>
@@ -242,7 +242,7 @@ export default function ContactSection() {
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Prefer WhatsApp?</h3>
                 <p className="text-gray-600 mb-4">Get instant responses to your queries on WhatsApp.</p>
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919380597443"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors inline-flex items-center"
