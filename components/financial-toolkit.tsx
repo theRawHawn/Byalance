@@ -216,7 +216,7 @@ export default function FinancialToolkit() {
                       <Input placeholder="Enter your email" type="email" {...field} />
                     </FormControl>
                     <FormMessage />
-                  </Ttem>
+                  </FormItem>
                 )}
               />
 
