@@ -163,7 +163,7 @@ export default function Footer() {
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
                 </svg>
-                +91 98765 43210
+                +91 9380597443
               </li>
               <li className="flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -176,7 +176,7 @@ export default function Footer() {
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M4 4a2 2 0 00-2 2v1.5a.5.5 0 001 0V6a1 1 0 011-1h1.5a.5.5 0 000-1H4zM5.5 15a.5.5 0 01-.5-.5V13a.5.5 0 011 0v1.5a1 1 0 001 1H8.5a.5.5 0 010 1H6a2 2 0 01-2-2zm10-10a.5.5 0 01.5-.5H17a2 2 0 012 2v1.5a.5.5 0 01-1 0V6a1 1 0 00-1-1h-1.5a.5.5 0 01-.5-.5zM14 13a.5.5 0 01.5.5V15a2 2 0 01-2 2h-1.5a.5.5 0 010-1H12.5a1 1 0 001-1v-1.5a.5.5 0 01.5-.5z"/>
                 </svg>
-                GSTIN: 123456789012345
+                GSTIN:
               </li>
             </ul>
           </div>
