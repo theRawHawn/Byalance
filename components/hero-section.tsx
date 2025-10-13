@@ -58,7 +58,7 @@ export default function HeroSection() {
               Book Free Consultation
             </Button>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919380597443"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-green-600 transition-colors inline-flex items-center justify-center"
