@@ -211,11 +211,12 @@ export default function ContactSection() {
                       <MapPin className="w-6 h-6" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">Office Address</h4>
+                      <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
                       <p className="text-gray-600">
-                        #38, Dollars Colony,<br />
-                        4th Phase, JP Nagar,<br />
-                        Bengaluru, Karnataka-580073
+                        #38, Dollar Point Apartments,<br />
+                        Dollars Colony, 4th Phase,<br />
+                        JP Nagar, Bengaluru, <br />
+                        Karnataka - 580073
                       </p>
                     </div>
                   </div>
@@ -227,7 +228,7 @@ export default function ContactSection() {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Business Hours</h4>
                       <p className="text-gray-600">
-                        Monday - Saturday: 9:00 AM - 7:00 PM<br />
+                        Monday - Saturday: 9:00 AM - 6:00 PM<br />
                         Sunday: Closed
                       </p>
                     </div>
