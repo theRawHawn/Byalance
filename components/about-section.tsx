@@ -9,10 +9,10 @@ export default function AboutSection() {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About Balance Book</h2>
             <p className="text-lg text-gray-600 mb-6">
-             Balance Book is a modern accounting firm dedicated to serving the unique needs of businesses in Tier 3 and Tier 4 cities across India. We understand that growing businesses need reliable, affordable, and professional accounting services.
+             Balance Book is a modern Virtual accounting firm dedicated to serving the unique needs of businesses in Tier 2, 3 and Tier 4 cities across India. We understand that growing businesses need reliable, affordable, and professional accounting services.
             </p>
             <p className="text-lg text-gray-600 mb-6">
-              Our team specializes in working with retailers, traders, service providers, and MSMEs who need comprehensive accounting support without the complexity and high costs of traditional accounting firms.
+              Our team specializes in working with Startups, retailers, traders, service providers, and MSMEs who need comprehensive accounting support without the complexity and high costs of traditional accounting firms.
             </p>
             <div className="bg-primary-50 p-6 rounded-xl">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Our Mission</h3>
