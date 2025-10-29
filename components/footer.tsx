@@ -10,11 +10,11 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-900 text-white py-12">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="flex-shrink-0"> <br />
             <Image src="/brandlogowhite.png"
-              alt="Balance Book" width={90} height={90} className="h-[90px] w-auto"/> <br />
+              alt="Balance Book" width={85} height={85} className="h-[90px] w-auto"/> <br />
               <br />
             <div className="flex space-x-5">
               <a
