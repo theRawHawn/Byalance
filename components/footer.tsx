@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="flex-shrink-0"> <br />
             <Image src="/brandlogowhite.png"
-              alt="Balance Book" width={90} height={90} className="h-[90px] w-auto"/> <br />
+              alt="Balance Book" width={80} height={80} className="h-[80px] w-auto"/> <br />
               <br />
             <div className="flex space-x-5">
               <a
