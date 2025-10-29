@@ -29,11 +29,11 @@ export default function ServicesDetailed() {
                 "Bank Reconciliation",
                 "Cash Book Maintenance",
                 "Journal Entries & Depreciation",
-                "Fixed Asset Register",
+                "Ledgers/Vendors Reconciliation",
                 "Trial Balance, P&L, Balance Sheet",
                 "Receivables & Payables Tracking",
-                "Tally Data Setup & Cleanup",
-                "Year-End Closing Support"
+                "Data Setup & Cleanup",
+                "Month-End & Year-End Closing Support"
               ].map((service, index) => (
                 <div key={index} className="flex items-center text-gray-700">
                   <Check className="text-green-500 mr-3 w-5 h-5 flex-shrink-0" />
