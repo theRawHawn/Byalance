@@ -12,10 +12,9 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="flex-shrink-0"> <br />
+          <div className="flex-shrink-0">
             <Image src="/brandlogowhite.png"
-              alt="Balance Book" width={80} height={80} className="h-[80px] w-auto"/> <br />
-              <br />
+              alt="Byalance" width={240} height={80} className="h-20 w-auto md:h-24 mb-4"/>
             <div className="flex space-x-5">
               <a
                 href="https://wa.me/919380597443"
@@ -170,7 +169,7 @@ export default function Footer() {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
                 </svg>
-                info@balancebook.in
+                info@byalance.in
               </li>
               <li className="flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -183,7 +182,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-300">&copy; 2025 Balance Book. All rights reserved.</p>
+          <p className="text-gray-300">&copy; 2025 Byalance. All rights reserved.</p>
         </div>
       </div>
     </footer>

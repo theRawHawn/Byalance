@@ -201,8 +201,8 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                      <p className="text-gray-600">info@balancebook.in</p>
-                      <p className="text-gray-600">support@balancebook.in</p>
+                      <p className="text-gray-600">info@byalance.in</p>
+                      <p className="text-gray-600">support@byalance.in</p>
                     </div>
                   </div>
 

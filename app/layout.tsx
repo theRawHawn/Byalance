@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { Providers } from "./providers";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,13 +30,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  title: "Balance Book: Accounting, GST, ITR & TDS Services",
-  description: "Expert accounting, GST, ITR, and TDS filing services from Balance Book. We simplify financial compliance for small and medium businesses across India.",
+  title: "Byalance: Accounting, GST, ITR & TDS Services",
+  description: "Expert accounting, GST, ITR, and TDS filing services from Byalance. We simplify financial compliance for small and medium businesses across India.",
   openGraph: {
-    title: "Balance Book: Accounting, GST, ITR & TDS Services",
-    description: "Expert accounting, GST, ITR, and TDS filing services from Balance Book. We simplify financial compliance for small and medium businesses across India.",
-    url: "https://www.balancebook.in",
-    siteName: "Balance Book",
+    title: "Byalance: Accounting, GST, ITR & TDS Services",
+    description: "Expert accounting, GST, ITR, and TDS filing services from Byalance. We simplify financial compliance for small and medium businesses across India.",
+    url: "https://www.byalance.in",
+    siteName: "Byalance",
     images: [
       {
         url: "/og-image.png",
@@ -48,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Balance Book: Accounting, GST, ITR & TDS Services",
-    description: "Expert accounting, GST, ITR, and TDS filing services from Balance Book. We simplify financial compliance for small and medium businesses across India.",
+    title: "Byalance: Accounting, GST, ITR & TDS Services",
+    description: "Expert accounting, GST, ITR, and TDS filing services from Byalance. We simplify financial compliance for small and medium businesses across India.",
     images: ["/og-image.png"],
   },
   icons: {
@@ -66,7 +67,7 @@ export default function RootLayout({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    'name': 'Balance Book',
+    'name': 'Byalance',
     'address': {
       '@type': 'PostalAddress',
       'streetAddress': '#38, Dollars Colony, 4th Phase, JP Nagar',
@@ -76,13 +77,13 @@ export default function RootLayout({
       'addressCountry': 'IN'
     },
     'telephone': '+91 93805 97443',
-    'email': 'info@balancebook.in',
-    'url': 'https://www.balancebook.in',
-    'logo': 'https://www.balancebook.in/brandlogo.png',
+    'email': 'info@byalance.in',
+    'url': 'https://www.byalance.in',
+    'logo': 'https://www.byalance.in/brandlogo.png',
     'sameAs': [
-      'https://www.facebook.com/balancebook',
-      'https://www.twitter.com/balancebook',
-      'https://www.linkedin.com/company/balancebook'
+      'https://www.facebook.com/byalance',
+      'https://www.twitter.com/byalance',
+      'https://www.linkedin.com/company/byalance'
     ]
   };
 
@@ -96,6 +97,7 @@ export default function RootLayout({
       </head>
       <body>
         <Providers>{children}</Providers>
+        <SpeedInsights/>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-LC2DSK5J0G"
           strategy="afterInteractive"
