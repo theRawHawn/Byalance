@@ -56,12 +56,6 @@ export default function Navbar() {
                 Pricing
               </button>
               <button
-                onClick={() => scrollToSection('toolkit')}
-                className="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors"
-              >
-                Free Tools
-              </button>
-              <button
                 onClick={() => scrollToSection('contact')}
                 className="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors"
               >
@@ -123,12 +117,6 @@ export default function Navbar() {
               className="text-gray-700 hover:text-primary-600 block px-3 py-2 text-base font-medium w-full text-left"
             >
               Pricing
-            </button>
-            <button
-              onClick={() => scrollToSection('toolkit')}
-              className="text-gray-700 hover:text-primary-600 block px-3 py-2 text-base font-medium w-full text-left"
-            >
-              Tools
             </button>
             <button
               onClick={() => scrollToSection('contact')}

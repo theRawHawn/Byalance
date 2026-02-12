@@ -6,7 +6,6 @@ import WhyChooseUs from "@/components/why-choose-us";
 import AboutSection from "@/components/about-section";
 import ServicesDetailed from "@/components/services-detailed";
 import PricingSection from "@/components/pricing-section";
-import FinancialToolkit from "@/components/financial-toolkit";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import WhatsAppFloat from "@/components/whatsapp-float";
@@ -31,10 +30,6 @@ export default function Home() {
 
       <section id="pricing">
         <PricingSection />
-      </section>
-
-      <section id="toolkit">
-        <FinancialToolkit />
       </section>
 
       <section id="contact">
