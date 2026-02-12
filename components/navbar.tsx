@@ -24,7 +24,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Image src="/brandlogo.png"
-              alt="Balance Book" width={240} height={80} className="h-16 w-auto md:h-20"/>
+              alt="Balance Book" width={240} height={80} className="h-20 w-auto md:h-24"/>
             </div>
           </div>
 

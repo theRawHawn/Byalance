@@ -21,11 +21,11 @@ export default function PricingSection() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-          {/* Basic Plan */}
+          {/* Starter Plan */}
           <Card className="hover:shadow-lg transition-shadow">
             <CardContent className="p-8">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Basic</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">🟢 Starter Plan</h3>
                 <div className="text-2xl font-bold text-primary-600 mb-2">₹5,000 - ₹10,000</div>
                 <p className="text-gray-600">per month</p>
               </div>
@@ -50,12 +50,12 @@ export default function PricingSection() {
                 className="w-full"
                 size="lg"
               >
-                Choose Basic
+                Choose Starter
               </Button>
             </CardContent>
           </Card>
 
-          {/* Standard Plan (Recommended) */}
+          {/* Growth Plan (Recommended) */}
           <Card className="border-2 border-primary-600 shadow-lg relative">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
               <span className="bg-primary-600 text-white px-4 py-2 rounded-full text-sm font-medium">Recommended</span>
@@ -63,7 +63,7 @@ export default function PricingSection() {
 
             <CardContent className="p-8 pt-12">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Standard</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">🟡 Growth Plan</h3>
                 <div className="text-2xl font-bold text-primary-600 mb-2">₹10,000 - ₹15,000+</div>
                 <p className="text-gray-600">per month</p>
               </div>
@@ -88,16 +88,16 @@ export default function PricingSection() {
                 className="w-full bg-primary-600 hover:bg-primary-700"
                 size="lg"
               >
-                Choose Standard
+                Choose Growth
               </Button>
             </CardContent>
           </Card>
 
-          {/* Premium Plan */}
+          {/* Pro Plan */}
           <Card className="hover:shadow-lg transition-shadow">
             <CardContent className="p-8">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Premium</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">🔴 Pro Plan</h3>
                 <div className="text-2xl font-bold text-primary-600 mb-2">₹15,000 - ₹20,000+</div>
                 <p className="text-gray-600">per month</p>
               </div>
@@ -123,7 +123,7 @@ export default function PricingSection() {
                 className="w-full"
                 size="lg"
               >
-                Choose Premium
+                Choose Pro
               </Button>
             </CardContent>
           </Card>
@@ -131,7 +131,7 @@ export default function PricingSection() {
 
         <div className="text-center mt-12">
           <h3 className="text-2xl font-bold text-primary-600 mb-3">Not an Ideal Pricing?</h3>
-          <p className="text-gray-600 mb-6">Need a custom solution? Let&apos;s discuss your specific requirements.</p>
+          <p className="text-gray-600 mb-6">Need a custom solution? Let's discuss your specific requirements.</p>
           <Button
             onClick={scrollToContact}
             className="bg-primary-600 text-white hover:bg-primary-700"

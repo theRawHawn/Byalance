@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Image src="/brandlogowhite.png"
-              alt="Byalance" width={240} height={80} className="h-20 w-auto md:h-24 mb-2"/>
+              alt="Byalance" width={240} height={80} className="h-24 w-auto md:h-28 mb-2"/>
             <div className="flex space-x-5">
               <a
                 href="https://wa.me/919380597443"
