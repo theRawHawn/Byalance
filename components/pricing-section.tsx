@@ -26,7 +26,7 @@ export default function PricingSection() {
             <CardContent className="p-8">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Starter Plan</h3>
-                <div className="text-2xl font-bold text-primary-600 mb-2">₹5,000 - ₹10,000</div>
+                <div className="text-2xl font-bold text-primary-600 mb-2">₹3,499 - ₹8,499</div>
                 <p className="text-gray-600">per month</p>
               </div>
 
@@ -64,7 +64,7 @@ export default function PricingSection() {
             <CardContent className="p-8 pt-12">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Growth Plan</h3>
-                <div className="text-2xl font-bold text-primary-600 mb-2">₹10,000 - ₹15,000+</div>
+                <div className="text-2xl font-bold text-primary-600 mb-2">₹8,999 - ₹13,499+</div>
                 <p className="text-gray-600">per month</p>
               </div>
 
@@ -98,7 +98,7 @@ export default function PricingSection() {
             <CardContent className="p-8">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Pro Plan</h3>
-                <div className="text-2xl font-bold text-primary-600 mb-2">₹15,000 - ₹20,000+</div>
+                <div className="text-2xl font-bold text-primary-600 mb-2">₹13,999 - ₹20,000+</div>
                 <p className="text-gray-600">per month</p>
               </div>
 
