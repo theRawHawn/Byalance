@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <Image src="/brandlogowhite.png"
+            <Image src="/brandlogowhite-converted-from-png.svg"
               alt="Byalance" width={240} height={80} className="h-28 w-auto md:h-32 mb-1"/>
             <div className="flex space-x-4">
               <a
@@ -182,7 +182,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-300">&copy; 2025 Byalance. All rights reserved.</p>
+          <p className="text-gray-300">&copy; 2026 Byalance. All rights reserved.</p>
         </div>
       </div>
     </footer>
