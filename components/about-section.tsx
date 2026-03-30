@@ -21,7 +21,7 @@ export default function AboutSection() {
           </div>
           <div className="lg:pl-8">
             <Image
-              src="/file_000.png"
+              src="/file_000.webp"
               alt="Professional accounting and financial analysis with charts, calculator, and money"
               className="rounded-xl shadow-lg w-full h-auto"
               width={800}
