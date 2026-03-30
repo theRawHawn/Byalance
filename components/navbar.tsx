@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center py-1">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Image src="/brandlogo.png"
+              <Image src="/brandlogo-converted-from-png.svg"
               alt="Balance Book" width={240} height={80} className="h-20 w-auto md:h-24"/>
             </div>
           </div>
