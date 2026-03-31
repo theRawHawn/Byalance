@@ -6,10 +6,11 @@ import { Button } from "@/components/ui/button";
 export default function HeroSection() {
   const languages = [
     { text: "Your Personal Accountant", lang: "English" },
-    { text: "आपके व्यक्तिगत लेखाकार", lang: "Hindi" },
     { text: "ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಲೆಕ್ಕಪತ್ರಗಾರ", lang: "Kannada" },
+    { text: "आपके व्यक्तिगत लेखाकार", lang: "Hindi" },
     { text: "तुमचे वैयक्तिक लेखापाल", lang: "Marathi" },
-    { text: "మీ వ్యక్తిగత అకౌంటెంట్", lang: "Telugu" }
+    { text: "మీ వ్యక్తిగత అకౌంటెంట్", lang: "Telugu" },
+    { text: "உங்கள் தனிப்பட்ட கணக்காளர்", lang: "Tamil" }
   ];
 
   const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
@@ -35,7 +36,7 @@ export default function HeroSection() {
     <section className="bg-gradient-to-br from-primary-50 to-white py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 min-h-[4rem] md:min-h-[6rem] flex items-center justify-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 min-h-[8rem] md:min-h-[6rem] flex items-center justify-center">
             <span
               key={currentLanguageIndex}
               className="animate-fade-in-up"
