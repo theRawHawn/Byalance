@@ -153,7 +153,7 @@ export default function ServicesDetailed() {
                 "Payroll Register",
                 "Issuing Salary Slips",
                 "TDS on Salary & Form 16",
-                "PF/ESI Return Support (optional add-on)"
+                "PF/ESI/PT/EDLI Return"
               ].map((service, index) => (
                 <div key={index} className="flex items-center text-gray-700">
                   <Check className="text-green-500 mr-3 w-5 h-5 flex-shrink-0" />
