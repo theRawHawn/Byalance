@@ -12,7 +12,7 @@ export default function AboutSection() {
              Byalance is a modern Virtual accounting firm dedicated to serving the unique needs of Startups and small businesses in Tier 1, 2 and Tier 3 cities across India. We understand that growing businesses need reliable, affordable, and professional accounting services.
             </p>
             <p className="text-lg text-gray-600 mb-6">
-              Our team specializes in working with Startups, retailers, traders, service providers, and MSMEs who need comprehensive accounting support without the complexity and high costs of traditional accounting firms.
+              We are specialized in working with Startups, retailers, traders, service providers, and MSMEs who need comprehensive accounting support without the complexity and high costs of traditional accounting firms.
             </p>
             <div className="bg-primary-50 p-6 rounded-xl">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Our Mission</h3>
