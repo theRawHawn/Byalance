@@ -63,7 +63,7 @@ export default function Navbar() {
               </button>
               <LanguageSelector />
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/917406296116"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-600 transition-colors inline-flex items-center"
