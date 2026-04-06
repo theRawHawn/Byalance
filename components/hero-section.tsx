@@ -3,16 +3,16 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
-export default function HeroSection() {
-  const languages = [
-    { text: "Your Personal Accountant", lang: "English" },
-    { text: "ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಲೆಕ್ಕಪತ್ರಗಾರ", lang: "Kannada" },
-    { text: "आपके व्यक्तिगत लेखाकार", lang: "Hindi" },
-    { text: "మీ వ్యక్తిగత అకౌంటెంట్", lang: "Telugu" },
-    { text: "तुमचे वैयक्तिक लेखापाल", lang: "Marathi" },
-    { text: "உங்கள் தனிப்பட்ட கணக்காளர்", lang: "Tamil" }
-  ];
+const languages = [
+  { text: "Your Personal Accountant", lang: "English" },
+  { text: "ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಲೆಕ್ಕಪತ್ರಗಾರ", lang: "Kannada" },
+  { text: "आपके व्यक्तिगत लेखाकार", lang: "Hindi" },
+  { text: "మీ వ్యక్తిగత అకౌంటెంట్", lang: "Telugu" },
+  { text: "तुमचे वैयक्तिक लेखापाल", lang: "Marathi" },
+  { text: "உங்கள் தனிப்பட்ட கணக்காளர்", lang: "Tamil" }
+];
 
+export default function HeroSection() {
   const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function HeroSection() {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [languages.length]);
+  }, []);
 
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -39,12 +39,7 @@ export default function HeroSection() {
           <h1 className="font-bold text-gray-900 mb-6 min-h-[12rem] md:min-h-[6rem] flex items-center justify-center">
             <span
               key={currentLanguageIndex}
-              className={`animate-fade-in-up ${
-                languages[currentLanguageIndex].lang === 'Tamil'
-                  ? 'text-3xl md:text-5xl'
-                  : 'text-4xl md:text-6xl'
-              }`}
-            >
+              className={`animate-fade-in-up ${languages[currentLanguageIndex].lang === 'Tamil' ? 'text-3xl md:text-5xl' : 'text-4xl md:text-6xl'}`}>
               {languages[currentLanguageIndex].text}.
             </span>
           </h1>
