@@ -8,8 +8,8 @@ export default function HeroSection() {
     { text: "Your Personal Accountant", lang: "English" },
     { text: "ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಲೆಕ್ಕಪತ್ರಗಾರ", lang: "Kannada" },
     { text: "आपके व्यक्तिगत लेखाकार", lang: "Hindi" },
-    { text: "तुमचे वैयक्तिक लेखापाल", lang: "Marathi" },
     { text: "మీ వ్యక్తిగత అకౌంటెంట్", lang: "Telugu" },
+    { text: "तुमचे वैयक्तिक लेखापाल", lang: "Marathi" },
     { text: "உங்கள் தனிப்பட்ட கணக்காளர்", lang: "Tamil" }
   ];
 
