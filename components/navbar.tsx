@@ -128,7 +128,7 @@ export default function Navbar() {
               <LanguageSelector />
             </div>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/917406296116"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white block px-3 py-2 rounded-lg text-base font-medium hover:bg-green-600 transition-colors mx-3 mt-2 text-center"
