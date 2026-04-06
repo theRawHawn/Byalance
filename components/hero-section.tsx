@@ -36,7 +36,7 @@ export default function HeroSection() {
     <section className="bg-gradient-to-br from-primary-50 to-white py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 min-h-[8rem] md:min-h-[6rem] flex items-center justify-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 min-h-[12rem] md:min-h-[6rem] flex items-center justify-center">
             <span
               key={currentLanguageIndex}
               className="animate-fade-in-up"
