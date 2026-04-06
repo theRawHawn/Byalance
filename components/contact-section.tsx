@@ -45,7 +45,7 @@ export default function ContactSection() {
     },
     onSuccess: () => {
       toast({
-        title: "Message sent successfully!",
+        title: "Message received successfully!",
         description: "We will get back to you soon.",
       });
       form.reset();
@@ -85,7 +85,7 @@ export default function ContactSection() {
                       <FormItem>
                         <FormLabel>Full Name *</FormLabel>
                         <FormControl>
-                          <Input placeholder="Enter your full name" {...field} />
+                          <Input placeholder="Enter your name" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
