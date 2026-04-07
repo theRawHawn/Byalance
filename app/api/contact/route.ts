@@ -24,7 +24,7 @@ async function updateGoogleSheet(validatedData: z.infer<typeof insertContactSubm
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: 'Submissions',
+      range: 'Submissions!A1',
       valueInputOption: 'USER_ENTERED',
       requestBody: {
         values: [
