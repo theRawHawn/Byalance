@@ -23,7 +23,7 @@ async function updateGoogleSheet(validatedData: z.infer<typeof insertContactSubm
   try {
     const auth = new google.auth.JWT({
       email: GOOGLE_CLIENT_EMAIL,
-      key: GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+      key: GOOGLE_PRIVATE_KEY!.replace(/\\n/g, '\n'),
       scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     });
 
