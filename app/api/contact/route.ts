@@ -31,7 +31,7 @@ async function updateGoogleSheet(validatedData: z.infer<typeof insertContactSubm
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: GOOGLE_SHEET_ID,
-      range: 'Client Details', // Corrected range to append to the sheet
+      range: 'Client Details',
       valueInputOption: 'USER_ENTERED',
       requestBody: {
         values: [
@@ -46,8 +46,12 @@ async function updateGoogleSheet(validatedData: z.infer<typeof insertContactSubm
       },
     });
   } catch (error) {
+    // Log the detailed error and re-throw it to be caught by the POST handler
     console.error("Error updating Google Sheet:", error);
-    throw new Error("Failed to update Google Sheet");
+    if (error instanceof Error) {
+        throw new Error(`Google Sheets API Error: ${error.message}`);
+    }
+    throw new Error("Failed to update Google Sheet due to an unknown error.");
   }
 }
 
@@ -71,9 +75,12 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    console.error("Contact form error:", error);
+    // --- DEBUGGING CHANGE ---
+    // Return the actual error message in the response to make it visible.
+    const errorMessage = error instanceof Error ? error.message : "An unknown error occurred";
+    console.error("Contact form error:", errorMessage);
     return NextResponse.json(
-      { message: "Failed to submit contact form. Please try again later." },
+      { message: "Failed to submit contact form.", error: errorMessage },
       { status: 500 }
     );
   }
