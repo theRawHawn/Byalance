@@ -24,7 +24,7 @@ async function updateGoogleSheet(validatedData: z.infer<typeof insertContactSubm
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: 'A1:E1',
+      range: 'Submissions',
       valueInputOption: 'USER_ENTERED',
       requestBody: {
         values: [
@@ -34,7 +34,7 @@ async function updateGoogleSheet(validatedData: z.infer<typeof insertContactSubm
     });
   } catch (error) {
     console.error("Error updating Google Sheet:", error);
-    // Optional: Add more robust error handling here, like sending a notification
+    throw new Error("Failed to update Google Sheet");
   }
 }
 
@@ -43,8 +43,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const validatedData = insertContactSubmissionSchema.parse(body);
 
-    // Don't wait for the sheet to update, respond to the user immediately
-    updateGoogleSheet(validatedData);
+    await updateGoogleSheet(validatedData);
 
     return NextResponse.json({ success: true, message: "Form submitted successfully" });
 
