@@ -1,5 +1,4 @@
 
-// Triggering a redeployment to apply environment variables
 import { NextRequest, NextResponse } from "next/server";
 import { google } from "googleapis";
 import { z } from "zod";
@@ -15,15 +14,16 @@ const insertContactSubmissionSchema = z.object({
 
 const { GOOGLE_CLIENT_EMAIL, GOOGLE_PRIVATE_KEY, GOOGLE_SHEET_ID } = process.env;
 
-if (!GOOGLE_CLIENT_EMAIL || !GOOGLE_PRIVATE_KEY || !GOOGLE_SHEET_ID) {
-  throw new Error("Google API credentials are not set in the environment variables.");
-}
-
 async function updateGoogleSheet(validatedData: z.infer<typeof insertContactSubmissionSchema>) {
+  // Ensure required environment variables are present
+  if (!GOOGLE_CLIENT_EMAIL || !GOOGLE_PRIVATE_KEY || !GOOGLE_SHEET_ID) {
+    throw new Error("Google API credentials are not set in the environment variables.");
+  }
+
   try {
     const auth = new google.auth.JWT({
       email: GOOGLE_CLIENT_EMAIL,
-      key: GOOGLE_PRIVATE_KEY!.replace(/\\n/g, '\n'),
+      key: GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
       scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     });
 
@@ -31,7 +31,7 @@ async function updateGoogleSheet(validatedData: z.infer<typeof insertContactSubm
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: GOOGLE_SHEET_ID,
-      range: 'Client Details', // Corrected range
+      range: 'Client Details', // Corrected range to append to the sheet
       valueInputOption: 'USER_ENTERED',
       requestBody: {
         values: [
@@ -39,15 +39,14 @@ async function updateGoogleSheet(validatedData: z.infer<typeof insertContactSubm
             validatedData.name,
             validatedData.mobile,
             validatedData.email,
-            validatedData.businessType ?? '', // Use nullish coalescing for optional fields
-            validatedData.message ?? '', // Use nullish coalescing for optional fields
+            validatedData.businessType ?? '',
+            validatedData.message ?? '',
           ],
         ],
       },
     });
   } catch (error) {
     console.error("Error updating Google Sheet:", error);
-    // Re-throw the error to be caught by the POST function's error handler
     throw new Error("Failed to update Google Sheet");
   }
 }
