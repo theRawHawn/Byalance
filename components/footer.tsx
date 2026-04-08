@@ -17,7 +17,7 @@ export default function Footer() {
               alt="Byalance" width={240} height={80} loading="lazy" className="h-28 w-auto md:h-32 mb-1"/>
             <div className="flex space-x-4">
               <a
-                href="https://wa.me/919380597443"
+                href="https://wa.me/917406296116"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white text-xl"
