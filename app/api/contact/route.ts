@@ -17,7 +17,7 @@ const { GOOGLE_CLIENT_EMAIL, GOOGLE_PRIVATE_KEY, GOOGLE_SHEET_ID } = process.env
 // Create a reusable JWT auth instance
 const auth = new google.auth.JWT({
   email: GOOGLE_CLIENT_EMAIL,
-  key: GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+  key: (GOOGLE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
   scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    console.error("Contact form error:", error);
+    console.error("Contact form error:", error);;
     return NextResponse.json(
       { message: "Failed to submit contact form. Please try again later." },
       { status: 500 }
