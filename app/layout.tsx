@@ -70,13 +70,13 @@ export default function RootLayout({
     'name': 'Byalance',
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': '#38, Dollars Colony, 4th Phase, JP Nagar',
+      'streetAddress': 'Dollars Colony, 4th Phase, JP Nagar',
       'addressLocality': 'Bengaluru',
       'addressRegion': 'Karnataka',
-      'postalCode': '580073',
+      'postalCode': '560078',
       'addressCountry': 'IN'
     },
-    'telephone': '+91 93805 97443',
+    'telephone': '+91 74062 96116',
     'email': 'info@byalance.in',
     'url': 'https://www.byalance.in',
     'logo': 'https://www.byalance.in/brandlogo-converted-from-png.svg',
