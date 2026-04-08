@@ -33,7 +33,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="bg-gradient-to-br from-primary-50 to-white py-20">
+    <section className="bg-gradient-to-br from-primary-50 to-white pt-12 pb-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="font-bold text-gray-900 mb-6 min-h-[10rem] md:min-h-[6rem] flex items-center justify-center">

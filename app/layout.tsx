@@ -54,8 +54,8 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   icons: {
-    icon: "/brandlogo.png",
-    apple: "/brandlogo.png",
+    icon: "/brandlogo-converted-from-png.svg",
+    apple: "/brandlogo-converted-from-png.svg",
   },
 };
 
@@ -79,7 +79,7 @@ export default function RootLayout({
     'telephone': '+91 93805 97443',
     'email': 'info@byalance.in',
     'url': 'https://www.byalance.in',
-    'logo': 'https://www.byalance.in/brandlogo.png',
+    'logo': 'https://www.byalance.in/brandlogo-converted-from-png.svg',
     'sameAs': [
       'https://www.facebook.com/byalance',
       'https://www.twitter.com/byalance',
@@ -90,6 +90,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/brandlogo-converted-from-png.svg" type="image/svg+xml" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
