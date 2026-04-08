@@ -90,7 +90,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/brandlogo-converted-from-png.svg" type="image/svg+xml" />
+        <link rel="icon" href="/brandlogo-converted-from-png.svg" type="image/svg+xml" sizes="any" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

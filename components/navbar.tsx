@@ -24,7 +24,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Image src="/brandlogo-converted-from-png.svg"
-              alt="Byalance" width={360} height={120} priority className="h-30 w-auto md:h-36"/>
+              alt="Byalance" width={432} height={144} priority className="h-20 w-auto md:h-36"/>
             </div>
           </div>
 
