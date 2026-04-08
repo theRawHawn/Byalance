@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   icons: {
-    icon: { url: "/brandlogo-converted-from-png.svg", sizes: "70x70" },
+    icon: { url: "/brandlogo-converted-from-png.svg", sizes: "100x100" },
     apple: { url: "/brandlogo-converted-from-png.svg", sizes: "180x180" },
   },
 };
