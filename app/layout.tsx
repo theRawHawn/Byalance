@@ -54,8 +54,8 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   icons: {
-    icon: "/brandlogo-converted-from-png.svg",
-    apple: "/brandlogo-converted-from-png.svg",
+    icon: { url: "/brandlogo-converted-from-png.svg", sizes: "48x48" },
+    apple: { url: "/brandlogo-converted-from-png.svg", sizes: "180x180" },
   },
 };
 
@@ -90,7 +90,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/brandlogo-converted-from-png.svg" type="image/svg+xml" sizes="any" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
