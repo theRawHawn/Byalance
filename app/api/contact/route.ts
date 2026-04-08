@@ -14,6 +14,13 @@ const insertContactSubmissionSchema = z.object({
 
 const { GOOGLE_CLIENT_EMAIL, GOOGLE_PRIVATE_KEY, GOOGLE_SHEET_ID } = process.env;
 
+// Create a reusable JWT auth instance
+const auth = new google.auth.JWT({
+  email: GOOGLE_CLIENT_EMAIL,
+  key: GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+  scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+});
+
 async function updateGoogleSheet(validatedData: z.infer<typeof insertContactSubmissionSchema>) {
   // Ensure required environment variables are present
   if (!GOOGLE_CLIENT_EMAIL || !GOOGLE_PRIVATE_KEY || !GOOGLE_SHEET_ID) {
@@ -21,12 +28,6 @@ async function updateGoogleSheet(validatedData: z.infer<typeof insertContactSubm
   }
 
   try {
-    const auth = new google.auth.JWT({
-      email: GOOGLE_CLIENT_EMAIL,
-      key: GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-      scopes: ['https://www.googleapis.com/auth/spreadsheets'],
-    });
-
     const sheets = google.sheets({ auth, version: 'v4' });
 
     await sheets.spreadsheets.values.append({
