@@ -20,7 +20,7 @@ export default function HeroSection() {
       setCurrentLanguageIndex((prevIndex) =>
         (prevIndex + 1) % languages.length
       );
-    }, 2000);
+    }, 1800);
 
     return () => clearInterval(interval);
   }, []);
