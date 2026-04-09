@@ -90,10 +90,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <link rel="preload" href="/_next/static/css/app/layout.css?v=1682522" as="style" />
+        <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-LC2DSK5J0G" as="script" />
       </head>
       <body className={inter.className}>
         <Providers>{children}</Providers>
@@ -111,6 +109,10 @@ export default function RootLayout({
             gtag('config', 'G-LC2DSK5J0G');
           `}
         </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );
